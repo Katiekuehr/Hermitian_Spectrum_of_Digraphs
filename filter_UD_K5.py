@@ -10,7 +10,14 @@ Two ways to use this:
 
         python3 filter_UD_K5.py H_spectra_n=5.json --csv spectra_UD_K5_dig.csv
 
-2. To additionally require at least one digon (an edge present in BOTH
+2. Restrict to specific n value(s) (e.g. only digraphs on K_5, or K_5
+     and K_6 together in one run):
+
+         python3 filter_UD_K5.py H_spectra_n=5.json.json --n 5 --csv spectra_UD_K5_dig.csv
+         python3 filter_UD_K5.py H_spectra_n=5_or_6.json --n 5 6 --csv spectra_UD_K5_dig.csv #(note that no such file exists in this repository)
+
+
+3. To additionally require at least one digon (an edge present in BOTH
 directions, i.e. H[i][j] == H[j][i] == 1 for some pair), use:
 
         python3 filter_UD_K5.py H_spectra_n=5.json --min-digons 1 --csv spectra_UD_K5_dig.csv
