@@ -6,7 +6,7 @@ A hermitian matrix $H = [h={ij}]$ of a digraph $D = (V,A)$, with $|V(D) = n|$ is
 - $h_{ij} = 0$ otherwise.
 
 ### How to use:
-If you simply want to look at the spectra of digraphs on $5$ vertices with underlying graph $K_5$ and at least one digon, open spectra_UD_K5_dig. 
+If you simply want to look at the spectra of digraphs on $5$ vertices with underlying graph $K_5$ and at least one digon, open spectra_UD_K5_dig.csv 
 
 If you want to check spectra of digraphs on $5$ vertices with underlying graph $K_5$ without the restriction on digon count, run python3 filter_UD_K5.py H_spectra_n=5.json --csv spectra_UD_K5_dig.csv.
 
